@@ -19,10 +19,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         zip \
         opcache \
         gd \
-        intl
+        intl \
+        mysqli
 
 COPY config/opcache.ini /usr/local/etc/php/conf.d/
-COPY config/settings.ini /usr/local/etc/php/conf.d/
 
 RUN apt-get -y autoclean && apt-get -y autoremove
 
