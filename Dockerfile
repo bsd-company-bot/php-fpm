@@ -1,7 +1,8 @@
 FROM php:7.4-fpm
 LABEL maintainer = "tuyen@bssd.vn"
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y \
         git \
         zlib1g-dev \
         libxml2-dev \
