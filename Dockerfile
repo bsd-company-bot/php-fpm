@@ -34,6 +34,6 @@ RUN chown -R www-data:www-data /var/www
 RUN mkdir -p /var/www/.composer
 RUN chown -R www-data:www-data /var/www/.composer
 
-USER 1000
+USER www-data
 
 WORKDIR /var/www/
